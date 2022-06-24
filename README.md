@@ -1,4 +1,4 @@
-# Auth
+# Code-Along 11.1 - Auth
 
 ## Requirements
 
