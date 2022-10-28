@@ -19,7 +19,12 @@ export function Routing(props) {
     props.getAuthStatus()
   }, [location.pathname])
 
-  const onLogout = () => { }
+  const onLogout = () => {
+    // use the "reset" action creator to reset redux state for privacy reasons
+    // use the "setMessage" action creator to put a message to the user in the UI
+    // wipe the auth token from the browser's local storage
+    // navigate the app to the "/auth" screen
+  }
 
   const { is_user, is_admin } = props.auth
   const renderNav = !is_admin || location.pathname !== '/admin/quiz/edit'
